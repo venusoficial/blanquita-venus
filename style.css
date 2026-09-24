@@ -146,42 +146,7 @@ border-radius:20px;
 ========================== */
 
 
-body::before{
-
-
-content:"";
-
-position:fixed;
-
-inset:0;
-
-
-background:
-
-linear-gradient(
-rgba(0,0,0,.10),
-rgba(0,0,0,.40)
-),
-
-url("assets/images/hero2.jpg.jpeg");
-
-
-background-size:cover;
-
-background-position:center;
-
-background-repeat:no-repeat;
-
-
-z-index:-2;
-
-
-animation:
-
-backgroundMove 25s infinite ease;
-
-
-}
+body::before{content:none;}
 
 
 
@@ -3349,23 +3314,7 @@ position:relative;
 
 overflow:hidden;
 
-background:
-
-linear-gradient(
-
-rgba(0,0,0,.45),
-
-rgba(0,0,0,.45)
-
-),
-
-url("assets/images/hero2.jpg.jpeg");
-
-background-size:cover;
-
-background-position:center;
-
-background-attachment:fixed;
+background:#0b090d;
 
 }
 
