@@ -590,13 +590,26 @@ prevButton.click();
 
 
 /* ==========================
-   PREVENIR ARRASTRE
+   DISUASIÓN BÁSICA PARA GUARDADO CASUAL
 ========================== */
 
+document.addEventListener("contextmenu", event => {
+    event.preventDefault();
+});
+
+document.addEventListener("keydown", event => {
+    if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "s") {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+}, true);
 
 document.querySelectorAll("img")
 .forEach(img=>{
 
+img.draggable=false;
+img.style.webkitUserDrag="none";
+img.style.webkitTouchCallout="none";
 
 img.addEventListener(
 "dragstart",
@@ -616,4 +629,61 @@ e=>e.preventDefault()
 console.log(
 "Blanquita Venus Premium 5.0 Loaded ✔"
 );
+
+
+/* Confirmación de mayoría de edad para la sesión del navegador */
+const ageGate = document.getElementById("ageGate");
+const ageConfirm = document.getElementById("ageConfirm");
+const ageDecline = document.getElementById("ageDecline");
+const ageSessionKey = "blanquitaVenusAgeConfirmed";
+
+if (ageGate) {
+    let ageConfirmed = false;
+    try {
+        ageConfirmed = sessionStorage.getItem(ageSessionKey) === "yes";
+    } catch (error) {
+        ageConfirmed = false;
+    }
+
+    if (ageConfirmed) {
+        ageGate.hidden = true;
+    } else {
+        document.body.style.overflow = "hidden";
+        ageConfirm?.focus();
+    }
+
+    ageConfirm?.addEventListener("click", () => {
+        try {
+            sessionStorage.setItem(ageSessionKey, "yes");
+        } catch (error) {
+            // La confirmación sigue funcionando aunque el navegador bloquee el almacenamiento.
+        }
+        ageGate.hidden = true;
+        document.body.style.overflow = "";
+    });
+
+    ageDecline?.addEventListener("click", () => {
+        window.location.replace("https://www.google.com/");
+    });
+
+    document.addEventListener("keydown", event => {
+        if (ageGate.hidden) return;
+        if (event.key === "Escape") {
+            event.preventDefault();
+            return;
+        }
+        if (event.key === "Tab") {
+            const buttons = [ageConfirm, ageDecline].filter(Boolean);
+            const first = buttons[0];
+            const last = buttons[buttons.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
+        }
+    });
+}
 

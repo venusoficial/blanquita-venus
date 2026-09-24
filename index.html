@@ -26,6 +26,7 @@ content="#050505">
 
 
 
+
 <!-- OPEN GRAPH -->
 
 <meta property="og:title"
@@ -33,7 +34,7 @@ content="Blanquita Venus | Sitio Oficial">
 
 
 <meta property="og:description"
-content="Modelo y creadora de contenido. Descubre mis redes oficiales y contenido exclusivo.">
+content="Modelo y creadora de contenido. Encuentra mis redes oficiales, fotografías y novedades.">
 
 
 <meta property="og:type"
@@ -88,6 +89,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <link rel="stylesheet"
 href="style.css">
 
+<link rel="stylesheet" href="redesign.css">
+
 
 </head>
 
@@ -95,6 +98,20 @@ href="style.css">
 
 <body>
 
+
+<div class="age-gate" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageGateTitle" aria-describedby="ageGateText">
+    <div class="age-gate-card">
+        <span class="age-gate-mark" aria-hidden="true"><i class="fa-solid fa-crown"></i></span>
+        <span class="age-gate-eyebrow">BLANQUITA VENUS</span>
+        <h1 id="ageGateTitle">Antes de continuar</h1>
+        <p id="ageGateText">Este sitio está dirigido a personas mayores de 18 años. ¿Confirmas que tienes 18 años o más?</p>
+        <div class="age-gate-actions">
+            <button class="age-gate-yes" id="ageConfirm" type="button">Sí, soy mayor de edad</button>
+            <button class="age-gate-no" id="ageDecline" type="button">No, salir</button>
+        </div>
+        <span class="age-gate-note">Tu respuesta se recordará durante esta sesión.</span>
+    </div>
+</div>
 
 
 <!-- LOADER -->
@@ -201,47 +218,9 @@ Sobre mí
 
 
 
-<li class="dropdown">
+<li><a href="#galeria">Galería</a></li>
 
-
-<a href="#galeria">
-
-Galería
-
-<i class="fa-solid fa-chevron-down"></i>
-
-</a>
-
-
-
-<ul class="dropdown-menu">
-
-
-<li>
-    <a href="#galeria">
-        📸 Galería
-    </a>
-</li>
-
-
-
-<li>
-
-<a href="#vip">
-
-🔐 Venus VIP Room
-
-</a>
-
-</li>
-
-
-</ul>
-
-
-</li>
-
-
+<li><a href="#arsmate">Arsmate</a></li>
 
 <li>
 <a href="#redes">
@@ -439,7 +418,7 @@ Arsmate
 
 <a
 
-href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%20🌹%0A%0AAcabo%20de%20visitar%20tu%20sitio%20web%20oficial%20y%20me%20interesa%20acceder%20a%20VENUS%20VIP.%0A%0AVi%20que%20los%20visitantes%20de%20la%20página%20tienen%20un%20beneficio%20exclusivo%20y%20me%20gustaría%20recibir%2  información.%0A%0A👑%20Código:%20WEBVIP"
+href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%2C%20visite%20tu%20pagina%20web%20oficial."
 
 target="_blank"
 
@@ -500,21 +479,7 @@ Twitter
 
 
 
-<a
 
-href="https://t.me/+2YSpH4TVhos5NDEx"
-
-target="_blank"
-
-rel="noopener noreferrer"
-
->
-
-<i class="fa-brands fa-telegram"></i>
-
-Canal VIP
-
-</a>
 
 
 
@@ -577,7 +542,7 @@ más
 
 Soy Blanquita Venus, modelo y creadora de contenido digital.
 
-Me especializo en crear contenido exclusivo de alta calidad para una comunidad que valora la elegancia, la autenticidad y una experiencia más cercana.
+Creo contenido digital y sesiones fotográficas con un estilo elegante y auténtico. Aquí puedes conocer mi trabajo y encontrar mis plataformas oficiales.
 
 </p>
 
@@ -587,7 +552,7 @@ Me especializo en crear contenido exclusivo de alta calidad para una comunidad q
 
 <p>
 
-Aquí podrás acceder a todas mis plataformas oficiales, contenido premium, sesiones fotográficas, novedades y diferentes formas de interacción, siempre desde un entorno seguro, privado y profesional.
+Aquí encontrarás mis fotografías, novedades y enlaces oficiales para seguir mi trabajo y ponerte en contacto conmigo.
 
 </p>
 
@@ -718,7 +683,7 @@ Ver Galería
 
 <img
 
-src="assets/images/hero3.jpg.jpeg"
+src="assets/images/hero3-BV.jpg.jpeg"
 
 alt="Blanquita Venus"
 
@@ -794,10 +759,10 @@ loading="lazy"
 
             <i class="fa-solid fa-gem"></i>
 
-            <h3>Plataformas VIP</h3>
+            <h3>Plataformas oficiales</h3>
 
             <p>
-                Accede a contenido exclusivo mediante mis plataformas oficiales.
+                Encuentra mis perfiles oficiales y descubre más de mi trabajo.
             </p>
 
         </div>
@@ -822,10 +787,10 @@ loading="lazy"
 
             <i class="fa-solid fa-handshake"></i>
 
-            <h3>Encuentros Privados</h3>
+            <h3>Consultas y colaboraciones</h3>
 
             <p>
-                Disponibles mediante coordinación previa y según disponibilidad.
+                Para consultas y propuestas, escríbeme por mis canales oficiales.
             </p>
 
         </div>
@@ -852,7 +817,7 @@ loading="lazy"
 
         <h3>
 
-            ✨ Exclusividad Garantizada
+            ✨ Gracias por visitar mi página
 
         </h3>
 
@@ -936,7 +901,7 @@ Momentos seleccionados de mi contenido oficial.
 
 <img
 
-src="assets/images/galeria1.jpg.jpeg"
+src="assets/images/galeria1-BV.jpg.jpeg"
 
 alt="Fotografía 1"
 
@@ -958,7 +923,7 @@ loading="lazy"
 
 <img
 
-src="assets/images/galeria2.jpg.jpeg"
+src="assets/images/galeria2-BV.jpg.jpeg"
 
 alt="Fotografía 2"
 
@@ -980,7 +945,7 @@ loading="lazy"
 
 <img
 
-src="assets/images/galeria3.jpg.jpeg"
+src="assets/images/galeria3-BV.jpg.jpeg"
 
 alt="Fotografía 3"
 
@@ -1002,7 +967,7 @@ loading="lazy"
 
 <img
 
-src="assets/images/galeria4.jpg.jpeg"
+src="assets/images/galeria4-BV.jpg.jpeg"
 
 alt="Fotografía 4"
 
@@ -1024,7 +989,7 @@ loading="lazy"
 
 <img
 
-src="assets/images/galeria5.jpg.jpeg"
+src="assets/images/galeria5-BV.jpg.jpeg"
 
 alt="Fotografía 5"
 
@@ -1046,7 +1011,7 @@ loading="lazy"
 
 <img
 
-src="assets/images/galeria6.jpg.jpeg"
+src="assets/images/galeria6-BV.jpg.jpeg"
 
 alt="Fotografía 6"
 
@@ -1069,85 +1034,31 @@ loading="lazy"
 
 </section>
 
-<!-- ==========================
-        VENUS VIP ROOM
-========================== -->
-
-<section class="vip-room" id="vip">
 
 
-<div class="vip-box fade-up">
-
-
-<div class="vip-icon">
-
-<i class="fa-solid fa-lock"></i>
-
-</div>
-
-
-<span>
-VIP ROOM
-</span>
-
-
-<h2>
-Venus VIP Room 👑
-</h2>
-
-
-<p>
-Contenido exclusivo privado disponible por tiempo limitado.
-</p>
-
-
-<div class="vip-info">
-
-
-<div>
-<i class="fa-solid fa-images"></i>
-
-<strong>
-20
-</strong>
-
-Fotografías exclusivas
-
-</div>
-
-
-
-<div>
-<i class="fa-solid fa-clock"></i>
-
-<strong>
-7 días
-</strong>
-
-Acceso temporal
-
-</div>
-
-
-
-</div>
-
-
-
-<a href="#contacto" class="btn-primary">
-
-Solicitar acceso VIP
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-
-
-</div>
-
-
+<section class="arsmate-spotlight" id="arsmate" aria-labelledby="arsmateTitle">
+    <div class="arsmate-card fade-up">
+        <div class="arsmate-art">
+            <span class="arsmate-orbit" aria-hidden="true"></span>
+            <img class="arsmate-art-photo" src="assets/images/arsmate-photo-BV.jpeg" alt="Retrato de Blanquita Venus con marca de agua BV" loading="lazy" decoding="async">
+            <div class="arsmate-art-overlay" aria-hidden="true">
+                <i class="fa-solid fa-crown"></i>
+                <span class="arsmate-art-name">Blanquita Venus</span>
+                <span class="arsmate-art-caption">Mi perfil oficial</span>
+            </div>
+        </div>
+        <div class="arsmate-copy">
+            <span class="arsmate-kicker">MI ESPACIO OFICIAL</span>
+            <h2 id="arsmateTitle">Descúbreme en Arsmate</h2>
+            <p>Visita mi perfil oficial para conocer mis publicaciones y seguir mis novedades directamente en Arsmate.</p>
+            <a class="arsmate-cta" href="https://arsmate.com/Blanquita_venus" target="_blank" rel="noopener noreferrer">
+                Visitar mi perfil <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+            </a>
+            <span class="arsmate-note">Enlace directo a mi perfil oficial</span>
+        </div>
+    </div>
 </section>
+
 
 <!-- ==========================
         REDES OFICIALES
@@ -1255,7 +1166,7 @@ Fotografías, historias y novedades.
 
 <a
 
-href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%20🌹%0A%0AAcabo%20de%20visitar%20tu%20sitio%20web%20oficial%20y%20me%20interesa%20acceder%20a%20VENUS%20VIP.%0A%0AVi%20que%20los%20visitantes%20de%20la%20página%20tienen%20un%20beneficio%20exclusivo%20y%20me%20gustaría%20recibir%20más%20información.%0A%0A👑%20Código:%20WEBVIP"
+href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%2C%20visite%20tu%20pagina%20web%20oficial."
 
 target="_blank"
 
@@ -1435,7 +1346,7 @@ Puedes comunicarte conmigo directamente mediante mis plataformas oficiales.
 
 <a
 
-href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%20🌹%0A%0AAcabo%20de%20visitar%20tu%20sitio%20web%20oficial%20y%20me%20interesa%20acceder%20a%20VENUS%20VIP.%0A%0AVi%20que%20los%20visitantes%20de%20la%20página%20tienen%20un%20beneficio%20exclusivo%20y%20me%20gustaría%20recibir%2  información.%0A%0A👑%2  Código:%2  WEBVIP"
+href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%2C%20visite%20tu%20pagina%20web%20oficial."
 
 target="_blank"
 
@@ -1536,7 +1447,7 @@ Modelo • Creadora de Contenido
 
 <a
 
-href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%20🌹%0A%0AAcabo%20de%20visitar%20tu%20sitio%20web%20oficial%20y%20me%20interesa%20acceder%20a%20VENUS%20VIP.%0A%0AVi%20que%20los%20visitantes%20de%20la%20página%20tienen%20un%20beneficio%20exclusivo%20y%2  información.%0A%0A👑%2  Código:%2  WEBVIP"
+href="https://wa.me/56935902811?text=Hola%20Blanquita%20Venus%2C%20visite%20tu%20pagina%20web%20oficial."
 
 target="_blank"
 
@@ -1695,22 +1606,11 @@ aria-label="Siguiente"
 
 
 
-
-
 </div>
 
 
 
-
-
-
-
-
-
 <script src="script.js"></script>
-
-
-
 </body>
 
 </html>
